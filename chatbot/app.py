@@ -86,12 +86,11 @@ def chat(user_input):
 
 # Create a Flask web application
 app = Flask(__name__)
-CORS(app, origins="*")  # Enable CORS for all routes
+CORS(app)  # Enable CORS for all routes
 app.teardown_appcontext(close_db)  # Close the SQLite connection after each request
 
 # Flask route to handle chat requests
 @app.route("/get_response", methods=["POST"])
-@cross_origin(origin='*')
 def api_get_response():
     try:
         user_text = request.json.get('msg')
