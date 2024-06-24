@@ -1,0 +1,7 @@
+flask 
+os
+pytesseract
+numpy
+pdf2image
+google.generativeai
+opencv-python 

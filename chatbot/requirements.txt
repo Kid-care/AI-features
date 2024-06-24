@@ -1,0 +1,14 @@
+flask==3.0.2
+openai==0.28.0
+flask-cors
+langchain
+db-sqlite3
+click
+Flask
+gunicorn
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+zipp
