@@ -5,9 +5,10 @@ import numpy as np
 from pdf2image import convert_from_path
 from flask import Flask, request, jsonify
 import google.generativeai as genai
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # Configure Google Generative AI
 genai.configure(api_key='API_KEY')
 
